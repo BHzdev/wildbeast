@@ -21,7 +21,9 @@ a {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
 }
 
 /*Grid Geral*/
@@ -34,22 +36,56 @@ img {
     "footer footer footer";
 }
 
+/*Header*/
 .header {
   grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
+.logo {
+  max-width: 200px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*sidenav*/
 .sidenav {
   grid-area: sidenav;
 }
 
+/*Content*/
 .content {
   grid-area: content;
 }
 
+/*Anúncios*/
 .anuncios {
   grid-area: anuncios;
 }
 
+/*Footer*/
 .footer {
   grid-area: footer;
 }
