@@ -101,9 +101,21 @@ img {
 /*Anúncios*/
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  padding: 30px;
+  display: grid;
+  align-content: start;
+  gap: 30px;
 }
 
 /*Footer*/
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
